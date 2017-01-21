@@ -6,5 +6,6 @@ target 'WeatherApp' do
   # use_frameworks!
 
   # Pods for WeatherApp
+  pod 'AFNetworking', '~> 3.0'
 
 end
