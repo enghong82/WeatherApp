@@ -24,6 +24,8 @@
 
         self.forecastsArray = [forecastsArray mutableCopy];
         self.currentWeatherCondition = currentWeatherCondition;
+        self.navigationItem.title = [[currentWeatherCondition.city stringByAppendingString:@", "] stringByAppendingString:currentWeatherCondition.country];
+
         [[self tableView] reloadData];
     }];
 
