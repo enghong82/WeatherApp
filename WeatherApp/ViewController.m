@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "WeatherAPI.h"
 #import "WeatherCell.h"
+#import "HeaderCell.h"
 
 @interface ViewController ()
 
@@ -52,6 +53,22 @@
     return cell;
 }
 
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+
+    static NSString *headerCellIdentifier = @"HeaderCell";
+
+    HeaderCell *cell = [tableView dequeueReusableCellWithIdentifier:headerCellIdentifier];
+
+    if (cell == nil) {
+        cell = [[HeaderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:headerCellIdentifier];
+    }
+
+    cell.weather = self.currentWeatherCondition;
+
+    self.tableView.tableHeaderView = cell;
+    
+    return cell;
+}
 
 
 
