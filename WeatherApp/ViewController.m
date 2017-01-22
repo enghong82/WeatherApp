@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WeatherAPI.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    [[WeatherAPI sharedInstance] getWeathersWithCompletion:^(Weather *currentWeatherCondition, NSArray *forecastsArray, NSError *error) {
+
+    }];
+
 }
 
 

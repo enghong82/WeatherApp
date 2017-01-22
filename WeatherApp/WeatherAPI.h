@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Weather.h"
 
 @interface WeatherAPI: NSObject
 
++ (instancetype) sharedInstance;
+
+- (void) getWeathersWithCompletion:(void (^)(Weather *currentWeatherCondition, NSArray *forecastsArray, NSError *error))callbackBlock;
 
 
 
