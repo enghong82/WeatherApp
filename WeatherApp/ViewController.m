@@ -67,8 +67,6 @@
 
     cell.weather = self.currentWeatherCondition;
 
-    self.tableView.tableHeaderView = cell;
-    
     return cell;
 }
 
