@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "WeatherAPI.h"
+#import "WeatherCell.h"
 
 @interface ViewController ()
 
@@ -40,13 +41,13 @@
 
     static NSString *weatherCellIdentifier = @"WeatherCell";
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:weatherCellIdentifier];
+    WeatherCell *cell = [tableView dequeueReusableCellWithIdentifier:weatherCellIdentifier];
 
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:weatherCellIdentifier];
+        cell = [[WeatherCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:weatherCellIdentifier];
     }
 
-    cell.textLabel.text = [self.forecastsArray[indexPath.row] weatherDate];
+    cell.weather = self.forecastsArray[indexPath.row];
 
     return cell;
 }
