@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Weather.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property NSMutableArray *forecastsArray;
+@property Weather *currentWeatherCondition;
 
 @end
 
