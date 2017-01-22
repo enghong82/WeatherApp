@@ -79,6 +79,8 @@
             [weather setWeatherText:[forecast objectForKey:@"text"]];
             [weather setForecastLow:[forecast objectForKey:@"low"]];
             [weather setForecastHigh:[forecast objectForKey:@"high"]];
+            [weather setCity:[location objectForKey:@"city"]];
+            [weather setCountry:[location objectForKey:@"country"]];
 
             [forecastsArray addObject:weather];
         }
