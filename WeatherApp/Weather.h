@@ -6,17 +6,23 @@
 //  Copyright © 2017 enghong. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 @interface Weather : NSObject
 
-enum weatherType {current, forecast}
+typedef NS_ENUM(NSInteger, WeatherType) {
+    CurrentCondition,
+    Forecast
+};
 
+@property (nonatomic) WeatherType type;
 @property (nonatomic) NSString *city;
 @property (nonatomic) NSString *country;
-@property (nonatomic) NSDate *weatherDate; //Same as condition date or forecast date
+@property (nonatomic) NSString *weatherDate; //Same as condition date or forecast date
 @property (nonatomic) NSString *weatherText; //Same as forecast text
-@property (nonatomic) NSUnitTemperature *conditionTemperature;
-@property (nonatomic) NSUnitTemperature *forecastLow;
-@property (nonatomic) NSUnitTemperature *forecastHigh;
+@property (nonatomic) NSString *conditionTemperature;
+@property (nonatomic) NSString *forecastLow;
+@property (nonatomic) NSString *forecastHigh;
 
 
 

@@ -6,4 +6,13 @@
 //  Copyright © 2017 enghong. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Weather.h"
+
+
+@implementation Weather
+
+enum WeatherType weatherType;
+
+
+
+@end
