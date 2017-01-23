@@ -98,32 +98,38 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="11 Jan 2017, Wed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHU-Fc-MaI">
-                                                    <rect key="frame" x="8" y="8" width="311" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="172" id="0Od-vL-rtG"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 Jan 2017, Wed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHU-Fc-MaI">
+                                                    <rect key="frame" x="10" y="10" width="355" height="21"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="79 - 84" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2K-1U-fVi">
-                                                    <rect key="frame" x="8" y="34" width="288" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="157" id="dsA-Oe-Dx4"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="79 - 84" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2K-1U-fVi">
+                                                    <rect key="frame" x="10" y="36" width="355" height="24"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thunderstorm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elq-wH-bUK">
-                                                    <rect key="frame" x="8" y="60" width="311" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thunderstorm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elq-wH-bUK">
+                                                    <rect key="frame" x="10" y="65" width="355" height="19.5"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="elq-wH-bUK" firstAttribute="top" secondItem="Y2K-1U-fVi" secondAttribute="bottom" constant="5" id="H4P-HP-DzK"/>
+                                                <constraint firstItem="Y2K-1U-fVi" firstAttribute="leading" secondItem="Kdf-Ag-k6n" secondAttribute="leading" constant="10" id="Hnz-Zj-yA6"/>
+                                                <constraint firstItem="pHU-Fc-MaI" firstAttribute="leading" secondItem="Kdf-Ag-k6n" secondAttribute="leading" constant="10" id="JSE-ZT-PAY"/>
+                                                <constraint firstAttribute="trailing" secondItem="Y2K-1U-fVi" secondAttribute="trailing" constant="10" id="VIu-pC-6u7"/>
+                                                <constraint firstItem="elq-wH-bUK" firstAttribute="leading" secondItem="Kdf-Ag-k6n" secondAttribute="leading" constant="10" id="YzC-NK-R4a"/>
+                                                <constraint firstItem="Y2K-1U-fVi" firstAttribute="top" secondItem="pHU-Fc-MaI" secondAttribute="bottom" constant="5" id="aZf-i6-k7z"/>
+                                                <constraint firstItem="pHU-Fc-MaI" firstAttribute="top" secondItem="Kdf-Ag-k6n" secondAttribute="top" constant="10" id="boy-JH-5vj"/>
+                                                <constraint firstAttribute="bottom" secondItem="elq-wH-bUK" secondAttribute="bottom" constant="5" id="bxT-zm-lso"/>
+                                                <constraint firstAttribute="trailing" secondItem="pHU-Fc-MaI" secondAttribute="trailing" constant="10" id="fbb-Pi-301"/>
+                                                <constraint firstItem="elq-wH-bUK" firstAttribute="top" secondItem="Y2K-1U-fVi" secondAttribute="bottom" constant="5" id="n9p-GT-F18"/>
+                                                <constraint firstAttribute="trailing" secondItem="elq-wH-bUK" secondAttribute="trailing" constant="10" id="q5D-9j-UPm"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
